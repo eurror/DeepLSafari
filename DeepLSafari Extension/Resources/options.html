@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DeepL Safari Extension Settings</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #0F2B46;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .status {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>DeepL Safari Extension Settings</h1>
+
+    <div class="form-group">
+        <label for="apiKey">DeepL API Key</label>
+        <input type="text" id="apiKey" placeholder="Enter your DeepL API key">
+        <p>Get your API key from <a href="https://www.deepl.com/pro-api" target="_blank">DeepL API</a></p>
+    </div>
+
+    <div class="form-group">
+        <label for="defaultTargetLang">Default Target Language</label>
+        <select id="defaultTargetLang">
+            <option value="EN">English</option>
+            <option value="DE">German</option>
+            <option value="FR">French</option>
+            <option value="ES">Spanish</option>
+            <option value="IT">Italian</option>
+            <option value="NL">Dutch</option>
+            <option value="PL">Polish</option>
+            <option value="PT">Portuguese</option>
+            <option value="RU">Russian</option>
+            <option value="JA">Japanese</option>
+            <option value="ZH">Chinese</option>
+        </select>
+    </div>
+
+    <button id="saveButton">Save Settings</button>
+
+    <div id="status" class="status" style="display: none;"></div>
+
+    <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+#deepl-translate-button {
+    position: absolute;
+    background: #0F2B46;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 999999;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#deepl-translate-button:hover {
+    background: #1C4F82;
+}
+
+#deepl-translation-popup {
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 16px;
+    max-width: 300px;
+    z-index: 1000000;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#deepl-popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+
+#deepl-popup-content {
+    margin-top: 5px;
+}

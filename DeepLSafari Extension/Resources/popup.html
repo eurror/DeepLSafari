@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin: 8px 0;
+            padding: 8px;
+            resize: vertical;
+        }
+        select {
+            margin: 8px 0;
+            padding: 4px;
+        }
+        button {
+            background: #0F2B46;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="sourceText" placeholder="Enter text to translate"></textarea>
+    <select id="targetLang">
+        <option value="EN">English</option>
+        <option value="DE">German</option>
+        <option value="FR">French</option>
+        <option value="ES">Spanish</option>
+        <!-- Add more languages as needed -->
+    </select>
+    <button id="translateButton">Translate</button>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
